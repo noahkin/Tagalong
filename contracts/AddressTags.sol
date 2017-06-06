@@ -2,7 +2,7 @@ pragma solidity ^0.4.11;
 
 contract AddressTags {
     address private owner;
-    mapping(address => Tag[]) tags;
+    mapping(address => Tag[]) tags; // maps each address to the tags that address has been tagged with
 
 
     function AddressTags() {
