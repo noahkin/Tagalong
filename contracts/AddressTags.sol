@@ -40,7 +40,7 @@ contract AddressTags {
             Tag memory newTag;
             newTag.tag = _tag;
             newTag.weight = 1;
-            newTag.taggedBy.push(msg.sender);
+            newTag.taggedBy[0] = (msg.sender);
             tags[_address].push(newTag);
         }
         return true;

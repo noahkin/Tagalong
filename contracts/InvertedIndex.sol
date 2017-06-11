@@ -11,7 +11,7 @@ contract InvertedIndex {
 
 
     function addEntry(address _address, bytes32 _tag) returns (bool) {
-        for (uint i = 0; i < idx[_address].length; i++)
+        for (uint i = 0; i < idx[_tag].length; i++)
             if (idx[_tag][i] == _address)
                 return false;
             idx[_tag].push(_address);
